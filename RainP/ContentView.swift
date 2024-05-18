@@ -11,16 +11,16 @@ struct ContentView: View {
             Form {
                 Section(header: Text("긴급 메세지를 입력해 주세요.")
                     .font(.headline)
-                    .foregroundColor(.green)) {
+                    .foregroundColor(AppColors.darkGreen)) {
                         ZStack(alignment: .topLeading) {
                             if message.isEmpty {
                                 Text("ex. 일시적인 공황장애 발생, 잠시 쉴 수 있게만 도와주세요 등등....")
-                                    .foregroundColor(.gray)
+                                    .foregroundColor(AppColors.systemGray)
                                     .padding(.top, 8)
                                     .padding(.leading, 5)
                             }
                             TextEditor(text: $message)
-                                .frame(height: 140)
+                                .frame(height: 90)
                                 .opacity(message.isEmpty ? 0.25 : 1)
                         }
                         
@@ -36,7 +36,7 @@ struct ContentView: View {
                         HStack {
                             Text("저장")
                                 .fontWeight(.bold)
-                                .foregroundColor(Color.blue)
+                                .foregroundColor(AppColors.darkGreen)
                         }
                     }
                 }
@@ -45,7 +45,7 @@ struct ContentView: View {
                     Button("취소") {
                         dismiss()
                     }
-                    .foregroundColor(.blue)
+                    .foregroundColor(AppColors.darkGreen)
                 }
             }
         }

@@ -9,18 +9,22 @@
 /* Begin PBXBuildFile section */
 		512A01CF2BF6DE5800EE8B39 /* RainPApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512A01CE2BF6DE5800EE8B39 /* RainPApp.swift */; };
 		512A01D12BF6DE5800EE8B39 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512A01D02BF6DE5800EE8B39 /* ContentView.swift */; };
-		512A01D32BF6DE5900EE8B39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 512A01D22BF6DE5900EE8B39 /* Assets.xcassets */; };
 		512A01D62BF6DE5900EE8B39 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 512A01D52BF6DE5900EE8B39 /* Preview Assets.xcassets */; };
 		512A01DD2BF6E26800EE8B39 /* SwiftUIView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512A01DC2BF6E26800EE8B39 /* SwiftUIView2.swift */; };
+		512A01E82BF8F90600EE8B39 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512A01E72BF8F90600EE8B39 /* Color.swift */; };
+		512A01EA2BF8F92A00EE8B39 /* Color+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512A01E92BF8F92A00EE8B39 /* Color+Extention.swift */; };
+		512A01EE2BF8FA1000EE8B39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 512A01ED2BF8FA1000EE8B39 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		512A01CB2BF6DE5800EE8B39 /* RainP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RainP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		512A01CE2BF6DE5800EE8B39 /* RainPApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RainPApp.swift; sourceTree = "<group>"; };
 		512A01D02BF6DE5800EE8B39 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		512A01D22BF6DE5900EE8B39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		512A01D52BF6DE5900EE8B39 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		512A01DC2BF6E26800EE8B39 /* SwiftUIView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView2.swift; sourceTree = "<group>"; };
+		512A01E72BF8F90600EE8B39 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		512A01E92BF8F92A00EE8B39 /* Color+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extention.swift"; sourceTree = "<group>"; };
+		512A01ED2BF8FA1000EE8B39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,10 +57,12 @@
 		512A01CD2BF6DE5800EE8B39 /* RainP */ = {
 			isa = PBXGroup;
 			children = (
+				512A01ED2BF8FA1000EE8B39 /* Assets.xcassets */,
+				512A01E72BF8F90600EE8B39 /* Color.swift */,
+				512A01E92BF8F92A00EE8B39 /* Color+Extention.swift */,
 				512A01CE2BF6DE5800EE8B39 /* RainPApp.swift */,
 				512A01D02BF6DE5800EE8B39 /* ContentView.swift */,
 				512A01DC2BF6E26800EE8B39 /* SwiftUIView2.swift */,
-				512A01D22BF6DE5900EE8B39 /* Assets.xcassets */,
 				512A01D42BF6DE5900EE8B39 /* Preview Content */,
 			);
 			path = RainP;
@@ -128,8 +134,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				512A01EE2BF8FA1000EE8B39 /* Assets.xcassets in Resources */,
 				512A01D62BF6DE5900EE8B39 /* Preview Assets.xcassets in Resources */,
-				512A01D32BF6DE5900EE8B39 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +147,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				512A01D12BF6DE5800EE8B39 /* ContentView.swift in Sources */,
+				512A01EA2BF8F92A00EE8B39 /* Color+Extention.swift in Sources */,
+				512A01E82BF8F90600EE8B39 /* Color.swift in Sources */,
 				512A01CF2BF6DE5800EE8B39 /* RainPApp.swift in Sources */,
 				512A01DD2BF6E26800EE8B39 /* SwiftUIView2.swift in Sources */,
 			);
