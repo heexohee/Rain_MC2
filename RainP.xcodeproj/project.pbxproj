@@ -14,6 +14,8 @@
 		512A01E82BF8F90600EE8B39 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512A01E72BF8F90600EE8B39 /* Color.swift */; };
 		512A01EA2BF8F92A00EE8B39 /* Color+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512A01E92BF8F92A00EE8B39 /* Color+Extention.swift */; };
 		512A01EE2BF8FA1000EE8B39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 512A01ED2BF8FA1000EE8B39 /* Assets.xcassets */; };
+		512A01F02BF9A98400EE8B39 /* ContentView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512A01EF2BF9A98400EE8B39 /* ContentView2.swift */; };
+		512A01F22BF9F5DF00EE8B39 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512A01F12BF9F5DF00EE8B39 /* DataController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		512A01E72BF8F90600EE8B39 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		512A01E92BF8F92A00EE8B39 /* Color+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extention.swift"; sourceTree = "<group>"; };
 		512A01ED2BF8FA1000EE8B39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		512A01EF2BF9A98400EE8B39 /* ContentView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView2.swift; sourceTree = "<group>"; };
+		512A01F12BF9F5DF00EE8B39 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,8 @@
 				512A01E92BF8F92A00EE8B39 /* Color+Extention.swift */,
 				512A01CE2BF6DE5800EE8B39 /* RainPApp.swift */,
 				512A01D02BF6DE5800EE8B39 /* ContentView.swift */,
+				512A01EF2BF9A98400EE8B39 /* ContentView2.swift */,
+				512A01F12BF9F5DF00EE8B39 /* DataController.swift */,
 				512A01DC2BF6E26800EE8B39 /* SwiftUIView2.swift */,
 				512A01D42BF6DE5900EE8B39 /* Preview Content */,
 			);
@@ -146,9 +152,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				512A01F22BF9F5DF00EE8B39 /* DataController.swift in Sources */,
 				512A01D12BF6DE5800EE8B39 /* ContentView.swift in Sources */,
 				512A01EA2BF8F92A00EE8B39 /* Color+Extention.swift in Sources */,
 				512A01E82BF8F90600EE8B39 /* Color.swift in Sources */,
+				512A01F02BF9A98400EE8B39 /* ContentView2.swift in Sources */,
 				512A01CF2BF6DE5800EE8B39 /* RainPApp.swift in Sources */,
 				512A01DD2BF6E26800EE8B39 /* SwiftUIView2.swift in Sources */,
 			);
