@@ -1,6 +1,8 @@
 import SwiftUI
+import SwiftData
 
-struct ContentView2: View {
+struct MessageView: View {
+    @Environment(\.modelContext) private var modelContext
     @Environment(\.managedObjectContext) var managedObjContext
     @Environment(\.dismiss) var dismiss
     
@@ -22,7 +24,7 @@ struct ContentView2: View {
                             .foregroundColor(AppColors.darkGreen.opacity(0.6))
                     }
                     TextEditor(text: $message)
-                        .padding(8)
+                        .padding(4)
                         .background(AppColors.paleGreen.opacity(1))
                         .frame(width: 359, height: 90)
                         .cornerRadius(10)
@@ -32,13 +34,16 @@ struct ContentView2: View {
                 Spacer()
     
             }
-            .padding(.top, 55)
+            .padding(.top, 50)
             .navigationTitle("긴급 메세지")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button {
+                        let newMessageEntry = MessageDataEntry(message: message)
+                        modelContext.insert(newMessageEntry)
                         dismiss()
+                        print("dd")
                     } label: {
                         HStack {
                             Text("저장")
@@ -61,5 +66,5 @@ struct ContentView2: View {
 }
 
 #Preview {
-    ContentView2()
+    MessageView()
 }

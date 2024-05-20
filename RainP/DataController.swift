@@ -10,17 +10,11 @@ import Foundation
 import SwiftData
 
 @Model
-final class DataEntry {
+final class MessageDataEntry {
     var message: String = ""
-    var text: String = ""
-    var rating: Double = 1
-    var date: Date = Date()
     
-    init(message: String, text: String, rating: Double, date: Date) {
+    init(message: String) {
         self.message = message
-        self.text = text
-        self.rating = rating
-        self.date = date
     }
 }
 
