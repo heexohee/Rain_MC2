@@ -3,10 +3,10 @@ import SwiftData
 
 struct MessageView: View {
     @Environment(\.modelContext) private var modelContext
+    @Environment(\.managedObjectContext) var managedObjContext
     @Environment(\.dismiss) var dismiss
     
-    @State var message: String = "긴급 메세지"
-    @Query var messageEntries: [MessageDataEntry]
+    @State private var message = "긴급 메세지"
     
     var body: some View {
         NavigationView {
@@ -41,10 +41,9 @@ struct MessageView: View {
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button {
-//                        let newMessageEntry = MessageDataEntry(message: message)
-//                        modelContext.insert(newMessageEntry)
-//                        print("dd")
-                        saveMessage()
+                        let newMessageEntry = MessageDataEntry(message: message)
+                        modelContext.insert(newMessageEntry)
+                        print("dd")
                         dismiss()
                        
                     } label: {
@@ -66,22 +65,6 @@ struct MessageView: View {
             
         }
     }
-    private func saveMessage() {
-         if let existingEntry = messageEntries.first {
-             existingEntry.message = message
-        //     print("ㅇㅇ")
-         } else {
-             let newMessageEntry = MessageDataEntry(message: message)
-             modelContext.insert(newMessageEntry)
-           
-         }
-         do {
-             try modelContext.save()
-             print("ㅇㅇ22")
-         } catch {
-             print("Failed to save message: \(error)")
-         }
-     }
 }
 
 #Preview {

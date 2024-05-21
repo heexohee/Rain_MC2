@@ -1,11 +1,11 @@
+////
+////  DataController.swift
+////  RainP
+////
+////  Created by heesohee on 5/19/24.
+////
 //
-//  DataController.swift
-//  RainP
 //
-//  Created by heesohee on 5/19/24.
-//
-
-
 import Foundation
 import SwiftData
 
@@ -17,9 +17,8 @@ final class MessageDataEntry {
         self.message = message
         print("메세지")
     }
-   
 }
-
+      
 
 //@Model
 //final class ContactEntry: ObservableObject {
