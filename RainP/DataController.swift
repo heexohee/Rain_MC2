@@ -6,18 +6,18 @@
 ////
 //
 //
-import Foundation
-import SwiftData
-
-@Model
-final class MessageDataEntry {
-    var message: String = ""
-    
-    init(message: String) {
-        self.message = message
-        print("메세지")
-    }
-}
+//import Foundation
+//import SwiftData
+//
+//@Model
+//final class MessageDataEntry {
+//    var message: String = ""
+//    
+//    init(message: String) {
+//        self.message = message
+//        print("메세지")
+//    }
+//}
       
 
 //@Model
