@@ -85,7 +85,7 @@ struct ContactSettingView: View {
                         Spacer()
                         
                         Button {
-                            pickedNumber = nil
+                            pickedNumber = ""
                             relation = ""
                         } label: {
                             Image(systemName: "x.circle")
@@ -119,7 +119,7 @@ struct ContactSettingView: View {
                         Spacer()
                         
                         Button {
-                            pickedNumber2 = nil
+                            pickedNumber2 = ""
                             relation2 = ""
                         } label: {
                             Image(systemName: "x.circle")
@@ -153,7 +153,7 @@ struct ContactSettingView: View {
                         Spacer()
                         
                         Button {
-                            pickedNumber3 = nil
+                            pickedNumber3 = ""
                             relation3 = ""
                         } label: {
                             Image(systemName: "x.circle")
