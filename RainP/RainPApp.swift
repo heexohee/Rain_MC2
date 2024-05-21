@@ -25,6 +25,7 @@ struct RainPApp: App {
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
             MessageDataEntry.self,
+       //     ContactEntry.self,
         ])
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
 
@@ -37,8 +38,10 @@ struct RainPApp: App {
     
     var body: some Scene {
         WindowGroup {
-            MessageView()
+                       MessageView()
         }
         .modelContainer(sharedModelContainer)
     }
 }
+
+// 예시 인자들 전해줘야 할듯

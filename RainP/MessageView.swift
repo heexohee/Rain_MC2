@@ -3,10 +3,10 @@ import SwiftData
 
 struct MessageView: View {
     @Environment(\.modelContext) private var modelContext
-    @Environment(\.managedObjectContext) var managedObjContext
     @Environment(\.dismiss) var dismiss
     
-    @State private var message = ""
+    @State var message: String = "긴급 메세지"
+    @Query var messageEntries: [MessageDataEntry]
     
     var body: some View {
         NavigationView {
@@ -29,6 +29,7 @@ struct MessageView: View {
                         .frame(width: 359, height: 90)
                         .cornerRadius(10)
                         .scrollContentBackground(.hidden)
+                   
                 }
                 
                 Spacer()
@@ -40,10 +41,12 @@ struct MessageView: View {
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button {
-                        let newMessageEntry = MessageDataEntry(message: message)
-                        modelContext.insert(newMessageEntry)
+//                        let newMessageEntry = MessageDataEntry(message: message)
+//                        modelContext.insert(newMessageEntry)
+//                        print("dd")
+                        saveMessage()
                         dismiss()
-                        print("dd")
+                       
                     } label: {
                         HStack {
                             Text("저장")
@@ -63,6 +66,22 @@ struct MessageView: View {
             
         }
     }
+    private func saveMessage() {
+         if let existingEntry = messageEntries.first {
+             existingEntry.message = message
+        //     print("ㅇㅇ")
+         } else {
+             let newMessageEntry = MessageDataEntry(message: message)
+             modelContext.insert(newMessageEntry)
+           
+         }
+         do {
+             try modelContext.save()
+             print("ㅇㅇ22")
+         } catch {
+             print("Failed to save message: \(error)")
+         }
+     }
 }
 
 #Preview {
