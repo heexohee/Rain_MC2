@@ -21,16 +21,27 @@ class ContactsManager {
     
     private init() {}
     
-    func saveContacts(_ contacts: String) {
-        UserDefaults.standard.set(contacts, forKey: contactsKey)
-        print("연락처 저장함수")
-    }
-    
-    func fetchContacts() -> String {
-        return UserDefaults.standard.string(forKey: contactsKey) ?? "기본연락처"
-    }
-}
+//    func saveContacts(_ contacts: String) {
+//        UserDefaults.standard.set(contacts, forKey: contactsKey)
+//        print("연락처 저장 함수 실행")
+//    }
+//    
+//    func fetchContacts() -> String {
+//        return UserDefaults.standard.string(forKey: contactsKey) ?? ""
+//    }
+//}
 
+
+ func saveContacts(_ number1: String, _ number2: String, _ number3: String, _ relation1: String, _ relation2: String, _ relation3: String) {
+     let contacts = [number1, number2, number3, relation1, relation2, relation3]
+     UserDefaults.standard.set(contacts, forKey: contactsKey)
+     print("연락처 저장 함수 실행")
+ }
+ 
+ func fetchContacts() -> [String] {
+     return UserDefaults.standard.stringArray(forKey: contactsKey) ?? []
+ }
+}
 
 struct ContactSettingView: View {
     
@@ -167,7 +178,7 @@ struct ContactSettingView: View {
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button {
-                        ContactsManager.shared.saveContacts(pickedNumber ?? "")
+                        ContactsManager.shared.saveContacts(pickedNumber ?? "", pickedNumber2 ?? "", pickedNumber3 ?? "", relation, relation2, relation3)
                        
                         dismiss()
                         print("연락처 저장 완료")
@@ -187,7 +198,15 @@ struct ContactSettingView: View {
                     .foregroundColor(AppColors.darkGreen)
                 }
             }.onAppear {
-                pickedNumber = ContactsManager.shared.fetchContacts() != "" ? ContactsManager.shared.fetchContacts() : ""
+                let contacts = ContactsManager.shared.fetchContacts()
+                if contacts.count == 6 {
+                    pickedNumber = contacts[0]
+                    pickedNumber2 = contacts[1]
+                    pickedNumber3 = contacts[2]
+                    relation = contacts[3]
+                    relation2 = contacts[4]
+                    relation3 = contacts[5]
+                }
             }
         }
     }
