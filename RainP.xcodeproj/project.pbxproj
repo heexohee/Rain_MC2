@@ -18,6 +18,9 @@
 		512A01F02BF9A98400EE8B39 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512A01EF2BF9A98400EE8B39 /* MessageView.swift */; };
 		512A01F22BF9F5DF00EE8B39 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512A01F12BF9F5DF00EE8B39 /* DataController.swift */; };
 		51BE25E52BFC402000D6F587 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51BE25E42BFC402000D6F587 /* SwiftUIView.swift */; };
+		51BE25E72BFC83F300D6F587 /* PatientInfoSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51BE25E62BFC83F300D6F587 /* PatientInfoSettingView.swift */; };
+		51BE25E92BFD765E00D6F587 /* MessageSettingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51BE25E82BFD765E00D6F587 /* MessageSettingModel.swift */; };
+		51BE25EB2BFD767900D6F587 /* ContactsSettingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51BE25EA2BFD767900D6F587 /* ContactsSettingModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +36,9 @@
 		512A01EF2BF9A98400EE8B39 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
 		512A01F12BF9F5DF00EE8B39 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		51BE25E42BFC402000D6F587 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		51BE25E62BFC83F300D6F587 /* PatientInfoSettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientInfoSettingView.swift; sourceTree = "<group>"; };
+		51BE25E82BFD765E00D6F587 /* MessageSettingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageSettingModel.swift; sourceTree = "<group>"; };
+		51BE25EA2BFD767900D6F587 /* ContactsSettingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsSettingModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +77,10 @@
 				512A01CE2BF6DE5800EE8B39 /* RainPApp.swift */,
 				512A01D02BF6DE5800EE8B39 /* ContentView.swift */,
 				512A01EF2BF9A98400EE8B39 /* MessageView.swift */,
+				51BE25E62BFC83F300D6F587 /* PatientInfoSettingView.swift */,
 				512A01F12BF9F5DF00EE8B39 /* DataController.swift */,
+				51BE25E82BFD765E00D6F587 /* MessageSettingModel.swift */,
+				51BE25EA2BFD767900D6F587 /* ContactsSettingModel.swift */,
 				512A01DC2BF6E26800EE8B39 /* SwiftUIView2.swift */,
 				510A33252BFB8DB1002D6988 /* ContactSettingView.swift */,
 				51BE25E42BFC402000D6F587 /* SwiftUIView.swift */,
@@ -161,8 +170,11 @@
 				510A33262BFB8DB1002D6988 /* ContactSettingView.swift in Sources */,
 				512A01F22BF9F5DF00EE8B39 /* DataController.swift in Sources */,
 				51BE25E52BFC402000D6F587 /* SwiftUIView.swift in Sources */,
+				51BE25E72BFC83F300D6F587 /* PatientInfoSettingView.swift in Sources */,
+				51BE25E92BFD765E00D6F587 /* MessageSettingModel.swift in Sources */,
 				512A01D12BF6DE5800EE8B39 /* ContentView.swift in Sources */,
 				512A01EA2BF8F92A00EE8B39 /* Color+Extention.swift in Sources */,
+				51BE25EB2BFD767900D6F587 /* ContactsSettingModel.swift in Sources */,
 				512A01E82BF8F90600EE8B39 /* Color.swift in Sources */,
 				512A01F02BF9A98400EE8B39 /* MessageView.swift in Sources */,
 				512A01CF2BF6DE5800EE8B39 /* RainPApp.swift in Sources */,

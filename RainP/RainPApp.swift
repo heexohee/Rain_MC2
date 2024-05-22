@@ -5,19 +5,20 @@
 ////  Created by heesohee on 5/17/24.
 ////
 //
-//import SwiftUI
-//import SwiftData
-//
-////@main
-////struct RainPApp: App {
-////    var body: some Scene {
-////        WindowGroup {
-////            ContentView2()
-////        }
-////    }
-////}
-//
-//
+import SwiftUI
+import SwiftData
+
+@main
+struct RainPApp: App {
+    var body: some Scene {
+        WindowGroup {
+     //       MessageView()
+            ContactSettingView()
+        }
+    }
+}
+
+
 //
 //@main
 //struct RainPApp: App {

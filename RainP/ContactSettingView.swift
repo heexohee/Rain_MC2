@@ -1,51 +1,14 @@
 import SwiftUI
 import ContactsUI
 import Combine
-import SwiftData
 import Foundation
+//import SwiftData
 
 
-@main
-struct MyApp: App {
-    var body: some Scene {
-        WindowGroup {
-//            MessageView()
-            ContactSettingView()
-        }
-    }
-}
-
-class ContactsManager {
-    static let shared = ContactsManager()
-    private let contactsKey = "savedContacts"
-    
-    private init() {}
-    
-//    func saveContacts(_ contacts: String) {
-//        UserDefaults.standard.set(contacts, forKey: contactsKey)
-//        print("연락처 저장 함수 실행")
-//    }
-//    
-//    func fetchContacts() -> String {
-//        return UserDefaults.standard.string(forKey: contactsKey) ?? ""
-//    }
-//}
-
-
- func saveContacts(_ number1: String, _ number2: String, _ number3: String, _ relation1: String, _ relation2: String, _ relation3: String) {
-     let contacts = [number1, number2, number3, relation1, relation2, relation3]
-     UserDefaults.standard.set(contacts, forKey: contactsKey)
-     print("연락처 저장 함수 실행")
- }
- 
- func fetchContacts() -> [String] {
-     return UserDefaults.standard.stringArray(forKey: contactsKey) ?? []
- }
-}
 
 struct ContactSettingView: View {
     
-    @Environment(\.modelContext) private var modelContext
+    //    @Environment(\.modelContext) private var modelContext
     @Environment(\.dismiss) var dismiss
     
     @State var pickedNumber: String?
@@ -179,7 +142,7 @@ struct ContactSettingView: View {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button {
                         ContactsManager.shared.saveContacts(pickedNumber ?? "", pickedNumber2 ?? "", pickedNumber3 ?? "", relation, relation2, relation3)
-                       
+                        
                         dismiss()
                         print("연락처 저장 완료")
                     } label: {
